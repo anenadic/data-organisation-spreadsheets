@@ -144,7 +144,7 @@ variable.
 >
 > > ## Solution
 > > Select any cell in "Date collected" column. In the field for the cell formula at the top,
-> > Excel will display the value that is stored > > internally for this cell.
+> > Excel will display the value that is stored internally for this cell.
 > >     ![drag_dates](../fig/dates_missing_year.png)
 > > From the cell that is selected in the figure above, we can see that Excel has stored the date "08/01/2015"
 > > (i.e. 8 January 2015 using the DD/MM/YYYY format).
@@ -170,7 +170,7 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > - 1/1/31
 > - 1/1/99
 >
-> What year does Excel assumes for each of these dates?
+> What year does Excel assume for each of these dates?
 >
 > > ## Solution
 > > [Excel is using the years 29/30 as the cutoff for the century by default](https://docs.microsoft.com/en-us/office/troubleshoot/excel/two-digit-year-numbers) - dates before and including the year “29” will be treated as in the 2000s and year “30” and above in 1900s:

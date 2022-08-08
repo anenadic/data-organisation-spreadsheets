@@ -28,14 +28,16 @@ detail below:
 
 - [Using multiple tables](#tables)
 - [Using multiple tabs](#tabs)
+- [Starting data in the middle of the spreadsheet](#middle)
 - [Not filling in zeros](#zeros)
-- [Using problematic null values](#null)
+- [Using problematic values for missing data](#null)
 - [Using formatting to convey information](#formatting)
-- [Using formatting to make the data sheet look pretty](#formatting_pretty)
-- [Placing comments or units in cells](#units)
+- [Using formatting to make the data look pretty](#formatting_pretty)
+- [Placing units in cells](#units)
+- [Placing comments in cells](#comments)
 - [Entering more than one piece of information in a cell](#info)
-- [Using problematic field names](#field_name)
-- [Using special characters in data](#special)
+- [Using problematic column names](#column_name)
+- [Using special characters in data](#special_characters)
 - [Inclusion of metadata within data](#metadata)
 - [Date formatting](../03-dates-as-data/)
 
@@ -76,7 +78,9 @@ But what about workbook tabs? Are they the easy solution to organising data? In 
   because it is all too easy to forget to change to the appropriate tab before recording new data. Similarly, when it
   comes to analysis, it's easy to draw data from the wrong tab.
 
-Rather than entering data into multiple tabs, try adding another column to your spreadsheet.
+There may be some situations when using an additional tab may useful (e.g. including a separate README tab with 
+metadata). In other situations, think hard if you need to enter your  data into multiple tabs - e.g. consider if 
+adding another column (or two) to your spreadsheet might solve your problem.
 
 > ## Note on bigger data and column headers
 >
@@ -85,6 +89,14 @@ Rather than entering data into multiple tabs, try adding another column to your 
 > these headers will get mixed into the data leading to problems down the road. Instead, you can freeze the column headers so that they remain visible even when you have a spreadsheet with many rows.
 > if you are not sure how to do this, see the [documentation on how to freeze column headers in Excel](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a).
 {: .callout}
+            
+## <a name="middle"></a> Starting data in the middle of the spreadsheet
+
+When preparing data for further analysis, there is no reason to start your data from the middle of the spreadsheet
+and leave empty rows at the top and empty columns to the left of the data. Libraries for importing data into R or Python 
+will expect data to start from the top left corner of your spreadsheet. While such libraries can now be configured 
+to load data starting from any cell in the spreadsheet - that's error prone and inviting trouble as you have to remember
+for each data sheet which cell you started entering the data from.The solution is to always start from cell A1.
 
 ## <a name="zeros"></a> Not filling in zeros
 
@@ -112,7 +124,7 @@ but not all approaches are useful.
 
 Sometimes different null values are used to describe the different reasons why the observation could not be made.
 "NULL", "missing data" and "malfunction", all convey important information, but you are in effect using a single column
-to capture three different types of information. This is messy, as described on the previous page, and the solution is
+to capture three different types of information. This is messy, as described in the previous episode, and the solution is
 to include new columns - one for each type of information you need to capture.
 
 Sometimes unacceptable null values are automatically recorded by the device you use to measure the observation (older
@@ -134,7 +146,7 @@ information, see White et al.
 
 ## <a name="formatting"></a> Using formatting to convey information
 
-A common examples of using formatting to convey information is to highlight cells in a sepcific colour that you want
+A common examples of using formatting to convey information is to highlight cells in a specific colour that you want
 dealt with differently to others. For example, highlighting cells  that should be excluded from the analysis (see
 below). Another example is to leave a blank row to indicate a separation in the data. Both of these highlighting
 approaches will cause problems with later analysis because they are undetectable to computers.
@@ -155,10 +167,18 @@ will confuse statistics software, which will read the merged cell as a single da
 data in the following rows.
 
 Your primary goal with structuring data is to accurately capture the data and make the connections in the data transparent
-to yourself and any program you use for analysis. You will want pretty tables for publications and suchlike, but those
+to yourself and any program you use for analysis. You will want pretty tables for publications and reports, but those
 should be completely separate from the tables you use to record the data.
 
-## <a name="units"></a> Placing comments or units in cells
+## <a name="units"></a> Placing units in cells
+
+Do not include units in cells! They cause a headache in later analysis when you have to separate out the unit from its
+associated value. Ideally, all the measurements you place in one column should be in the same unit, but if for some
+reason they are not, create a new column to specify the units.
+
+![Including units in data cells](../fig/spreadsheet-mistakes-units.png)
+
+## <a name="comments"></a> Placing comments in cells
 
 Sometimes you need to make a note or a comment on an observation. For example, you may want to identify observations
 that were collected by a summer student who you later found out was misidentifying some of your species. These data you
@@ -168,21 +188,18 @@ The problem is the same as that with formatting data to convey information: most
 LibreOffice comments, so they would be ignored. The solution is the same as described for formatting, create another
 column if you need to add notes to cells.
 
-Do not include units in cells! They cause a headache in later analysis when you have to separate out the unit from its
-associated value. Ideally, all the measurements you place in one column should be in the same unit, but if for some
-reason they are not, create a new column to specify the units.
-
+![Including comments in data cells](../fig/spreadsheet-mistakes-comments.png)
 
 ## <a name="info"></a> Entering more than one piece of information in a cell
 
-As described on the previous page, the rule is "one cell, one observation". For example, if you are counting species and
+As described in the previous episode, the rule is "one cell, one observation of one variable". For example, if you are counting species and
 you find one male and one female of the same species, you could enter this as '1M, 1F.' By this stage in the lesson, you will
 probably find yourself instinctually repelled by this practice! If you record two pieces of data in the same cell, you
 will confuse data analysis software and this risks mistakes in analysis.
 
 The solution is to include one column for the number of individuals and a separate column for the sex.
 
-## <a name="field_name"></a> Using problematic field names
+## <a name="field_name"></a> Using problematic column names
 
 The key here is to choose descriptive column names to allow for easy data identification.
 
