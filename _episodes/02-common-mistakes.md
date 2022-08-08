@@ -120,7 +120,7 @@ It is very important to record zeros as zeros and truly missing data as nulls.
 Null values are also problematic! Different people take different approaches to recording the lack of data (see below),
 but not all approaches are useful.
 
-![White et al.](../fig/3_white_table_1.jpg)
+![White et al.](../fig/3_white_table_1.jpg){: .image-with-shadow }
 
 Sometimes different null values are used to describe the different reasons why the observation could not be made.
 "NULL", "missing data" and "malfunction", all convey important information, but you are in effect using a single column
@@ -151,12 +151,12 @@ dealt with differently to others. For example, highlighting cells  that should b
 below). Another example is to leave a blank row to indicate a separation in the data. Both of these highlighting
 approaches will cause problems with later analysis because they are undetectable to computers.
 
-![formatting](../fig/formatting.png)
+![formatting](../fig/formatting.png){: .image-with-shadow }
 
 The solution - as is so often the case with spreadsheets - is to create a new column to encode the data that should be
 excluded.
 
-![good formatting](../fig/good_formatting.png)
+![good formatting](../fig/good_formatting.png){: .image-with-shadow }
 
 ## <a name="formatting_pretty"></a> Using formatting to make the spreadsheet look pretty
 
@@ -176,7 +176,7 @@ Do not include units in cells! They cause a headache in later analysis when you 
 associated value. Ideally, all the measurements you place in one column should be in the same unit, but if for some
 reason they are not, create a new column to specify the units.
 
-![Including units in data cells](../fig/spreadsheet-mistakes-units.png)
+![Including units in data cells](../fig/spreadsheet-mistakes-units.png){: .image-with-shadow width="600px" }
 
 ## <a name="comments"></a> Placing comments in cells
 
@@ -188,7 +188,7 @@ The problem is the same as that with formatting data to convey information: most
 LibreOffice comments, so they would be ignored. The solution is the same as described for formatting, create another
 column if you need to add notes to cells.
 
-![Including comments in data cells](../fig/spreadsheet-mistakes-comments.png)
+![Including comments in data cells](../fig/spreadsheet-mistakes-comments.png){: .image-with-shadow width="600px" }
 
 ## <a name="info"></a> Entering more than one piece of information in a cell
 
@@ -293,7 +293,7 @@ a separate file in the same folder as your data or a separate tab within your da
 ## Fixing mistakes in data organisation
 
 Let's put this theory into practice! If you have not already done so, download the [messy survey data](../data/messy_survey_data.xls)
-(as outlined in [Setup section](../setup.html#data)). We will now clean this data and learn
+(as outlined in the [Setup section](../setup.html#data)). We will now clean this data and learn
 some best practices in the process.
 
 Take the messy version of the survey data and open it in a spreadsheet program. There are four tabs:
@@ -324,7 +324,8 @@ Take the messy version of the survey data and open it in a spreadsheet program. 
 > > which is the example cleaned data file you downloaded during [setup](../setup.html).
 > > For example, you could chose to record your data using the following columns:
 > > - date_collected
-> > - plot_id	species_id
+> > - plot_id 
+> > - species_id
 > > - sex
 > > - hindfoot_length_cm
 > > - weight_grams
@@ -338,7 +339,7 @@ Take the messy version of the survey data and open it in a spreadsheet program. 
 {: .challenge}
 
 > ## Full & clean dataset
-> If you want to have a look at the full, clean dataset - have a look atsome of the other files you downloaded.
+> If you want to have a look at the full, clean dataset - have a look at some of the other files you downloaded.
 > [surveys.csv](https://ndownloader.figshare.com/files/2292172) combines data from all the surveys
 > and [combined.csv](https://ndownloader.figshare.com/files/10717186) includes the cleaned data from [surveys.csv](https://ndownloader.figshare.com/files/2292172), [plots.csv](https://ndownloader.figshare.com/files/3299474) and [species.csv](https://ndownloader.figshare.com/files/3299483) combined into one clean file.
 {: .testimonial}
