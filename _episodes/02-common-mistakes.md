@@ -46,7 +46,7 @@ detail below:
 A common mistake is creating multiple data tables within a single spreadsheet, as shown below. This will confuse a data analysis
 program (and many humans too).
 
-![multiple tabs](../fig/2_datasheet_example.jpg)
+![multiple tabs](../fig/2_datasheet_example.jpg){: .image-with-shadow }
 
 There are a number of problems with multiple tables on one page. The main problem is that - although clearly separate to
 a human observer - a computer will rigidly interpret anything in the same row as belonging to the same observation.
