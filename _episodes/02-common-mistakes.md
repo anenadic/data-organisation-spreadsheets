@@ -199,7 +199,7 @@ will confuse data analysis software and this risks mistakes in analysis.
 
 The solution is to include one column for the number of individuals and a separate column for the sex.
 
-## <a name="field_name"></a> Using problematic column names
+## <a name="column_name"></a> Using problematic column names
 
 The key here is to choose descriptive column names to allow for easy data identification.
 
