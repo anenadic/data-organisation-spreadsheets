@@ -45,13 +45,13 @@ available in Excel, check out the [Excel support page on data validation](https:
 3. On the `Data` tab from the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation`
    or `Validation Tools` (depending on your version of Excel) or `Validity` in LibreOffice.
 
-   ![Image of Data Validation button on Data tab](../fig/data-validation-button.png)
+   ![Image of Data Validation button on Data tab](../fig/data-validation-button.png){: .image-with-shadow }
 
 4. In the `Allow` box of tab `Settings` select 'Whole numbers' of data that should be in the
    column. Other options include decimals, lists of items, dates, and
    other values.
 
-   ![Image of Data Validation window](../fig/data-validation-window.png)
+   ![Image of Data Validation window](../fig/data-validation-window.png){: .image-with-shadow }
 
 5. Now attempt to enter text into a cell in the 'plot_id' column. You should be prevented from doing so, as the column
    is now locked down to whole numbers only.
@@ -77,30 +77,30 @@ plot values that are integers between 1 and 24.
 > > ## Solution
 > > 1. Open the tab 'semi-cleaned-combined' of [messy data spreadsheet](../data/messy_survey_data.xls) and select the 'plot_id' column.
 > > 2. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation`
-       > > or `Validation Tools` (depending on your version of Excel) or `Validity` in LibreOffice.
+> > or `Validation Tools` (depending on your version of Excel) or `Validity` in LibreOffice.
 > > 3. In the `Allow` box of the `Settings` tab select `Whole number` (and in LibreOffice select the `Data` field to be
-       > > `valid range`.
+> > `valid range`.
 > > 4. Set the minimum and maximum values to 1 and 24.
-       ![Image of Data Validation window for validating numeric values](../fig/data-validation-plot-id.png)
-       > > Now let's try entering a new value in the plot column that is not a valid
-       > > plot id. The spreadsheet stops us from entering the wrong value and asks us if we
-       > > would like to try again.
-       ![Image of error when trying to enter invalid numeric data](../fig/data-validation-plot-id-error.png)
-       > > You can also customise the resulting message to be more informative by entering
-       > > your own message in the `Input Message` tab (or, in LibreOffice, by selecting the `Error alert` tab and entering a
-       > > message in the `Error message` field).
-       ![Image of Input Message tab](../fig/data-validation-plot-id-message.png)
-       > > You can also set the invalid data to result in a warning rather than an error by modifying the `Style`
-       option on the `Error Alert` tab (or the `Action` field in LibreOffice).
-       > > ![Image of Error Alert tab](../fig/data-validation-plot-id-error-alert.png)
+![Image of Data Validation window for validating numeric values](../fig/data-validation-plot-id.png)
+> > Now let's try entering a new value in the plot column that is not a valid
+> > plot id. The spreadsheet stops us from entering the wrong value and asks us if we
+> > would like to try again.
+![Image of error when trying to enter invalid numeric data](../fig/data-validation-plot-id-error.png){: .image-with-shadow }
+> > You can also customise the resulting message to be more informative by entering
+> > your own message in the `Input Message` tab (or, in LibreOffice, by selecting the `Error alert` tab and entering a
+> > message in the `Error message` field).
+![Image of Input Message tab](../fig/data-validation-plot-id-message.png){: .image-with-shadow }
+> > You can also set the invalid data to result in a warning rather than an error by modifying the `Style`
+> > option on the `Error Alert` tab (or the `Action` field in LibreOffice).
+> > ![Image of Error Alert tab](../fig/data-validation-plot-id-error-alert.png){: .image-with-shadow }
 > > 5. In newer versions of Excel, you may also have an option to indicate all previous invalid entries once you have
-       > > entered your restricted values.
-       > >    ![Image of invalid numeric entries circled](../fig/invalid-entries-numeric.png)
-       > > You have now provided a restriction that will be validated each time you try and
-       > > enter data into the selected cells. If you type a value which is not on the list you will get an error message.
-       > > This not only prevents data input errors, but also makes it easier and faster to enter data.
-       > {: .solution}
-       {: .challenge}
+> > entered your restricted values.
+> >    ![Image of invalid numeric entries circled](../fig/invalid-entries-numeric.png){: .image-with-shadow }
+> > You have now provided a restriction that will be validated each time you try and
+> > enter data into the selected cells. If you type a value which is not on the list you will get an error message.
+> > This not only prevents data input errors, but also makes it easier and faster to enter data.
+> {: .solution}
+{: .challenge}
 
 ### Restricting data to entries from a list
 
@@ -117,25 +117,24 @@ values, you can select the right option from the list every time. Let’s apply 
 > > ## Solution
 > > 1. Open the tab 'semi-cleaned-combined' of `messy_survey_data.xls` and select the 'species_id' column.
 > > 2. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation`
-       > > or `Validation Tools` (depending on your version of Excel) or `Validity` in LibreOffice.
+> > or `Validation Tools` (depending on your version of Excel) or `Validity` in LibreOffice.
 > > 3. In the `Allow` box of the `Settings` tab select `List`.
 > > 4. Type a list of all the values that you want to be accepted in this column, separated by a comma (with no spaces).
-       > > For example, type "DM,NL,DS,PP,PE,PF" (in LibreOffice, skip the commas and add each entry to a new line). Note this is only a small subset of allowed species ids - [the whole
-       > > set](https://ndownloader.figshare.com/files/3299483) is much larger but for the purposes of this exercise we want to show you how to restrict a cell to a list of
-       > > values and what happens when old data does not conform to this restriction.
-       > >    ![Image of Data Validation window for validating list values](../fig/data-validation-list.png)
+> > For example, type "DM,NL,DS,PP,PE,PF" (in LibreOffice, skip the commas and add each entry to a new line). Note this is only a small subset of allowed species ids - [the whole set](https://ndownloader.figshare.com/files/3299483) is much larger but for the purposes of this exercise we want to show you how to restrict a cell to a list of
+> > values and what happens when old data does not conform to this restriction.
+> >    ![Image of Data Validation window for validating list values](../fig/data-validation-list.png){: .image-with-shadow }
 > > 5. Create a meaningful input message and modify alert error type, as in the previous exercise, then click OK.
 > > 6. Scroll to the bottom of your data and select a cell in the `species_id` column in a new row.
-       > > When a cell in this column is selected, a drop-down arrow will appear.
-       > > When you click the arrow you will be able to select a value from your list of allowed values.
+> > When a cell in this column is selected, a drop-down arrow will appear.
+> > When you click the arrow you will be able to select a value from your list of allowed values.
 > > 7. In newer versions of Excel, you may also have an option to indicate all previous invalid entries once you have
-       > > entered your restricted values.
-       > >    ![Image of invalid list entries circled](../fig/invalid-entries-list.png)
-       > > You have now provided a restriction that will be validated each time you try and
-       > > enter data into the selected cells. If you type a value which is not on the list you will get an error message.
-       > > This not only prevents data input errors, but also makes it easier and faster to enter data.
-       > {: .solution}
-       {: .challenge}
+> > entered your restricted values.
+> >    ![Image of invalid list entries circled](../fig/invalid-entries-list.png){: .image-with-shadow }
+> > You have now provided a restriction that will be validated each time you try and
+> > enter data into the selected cells. If you type a value which is not on the list you will get an error message.
+> > This not only prevents data input errors, but also makes it easier and faster to enter data.
+> {: .solution}
+{: .challenge}
 
 Typing a list of values where only a few possible values exist might be convenient, but if the list is longer (e.g.
 all allowed species) it
@@ -193,17 +192,17 @@ If your dataset is well-structured and does not contain formulas, sorting should
 1. Select `weight_grams` column.
 2. Click the `Sort` button on the Data tab from the top level menu in Excel (in LibreOffice select the `Data` menu and
    then select `Sort`.
-   ![Image of sort button](../fig/sort-button.png)
+   ![Image of sort button](../fig/sort-button.png){: .image-with-shadow width="800px" }
    Note that in older versions of Excel you may get just the `Sort` button without the drop-down menu, followed
    by a pop up window to specify the column you want to sort and the sort order (shown in figure below).
-   ![Image of sort pop up](../fig/sort-settings.png)
+   ![Image of sort pop up](../fig/sort-settings.png){: .image-with-shadow width="800px"}
 3. In the pop-up that appears make sure you select `Expand the selection` to make sure data in other columns is
    moved together with the data in the column you are sorting.
-   ![Image of expanding sort pop up](../fig/sort-expand.png)
+   ![Image of expanding sort pop up](../fig/sort-expand.png){: .image-with-shadow }
 4. Note how the odd values sort to the top and bottom of the data.
    The cells containing no data values sort to the bottom of the tabular data, while the cells where the letter
    "g" was included can be found towards the top or bottom. This is a powerful way to check your data for outliers and odd values.
-   ![Image of outliers sorted at the top](../fig/sort-result.png)
+   ![Image of outliers sorted at the top](../fig/sort-result.png){: .image-with-shadow width="800px" }
 > {: .solution}
 {: .challenge}
 
@@ -222,16 +221,16 @@ entering data. Let's apply some to our data.
 1. Select `weight_grams` column.
 2. In the main Excel menu bar, click `Home` > `Conditional Formatting...` choose `New rule` (in LibreOffice from the
    `Format` menu, select `Conditional` and then `Color scale`).
-   ![Image of Conditional Formatting - adding new rule](../fig/conditional-formatting-new-rule.png)
+   ![Image of Conditional Formatting - adding new rule](../fig/conditional-formatting-new-rule.png){: .image-with-shadow }
 3. In the `New Formatting Rule` window, apply any `2-Color Scale` formatting rule. (In LibreOffice select `Color scale
    (2 entries)` from the top-middle drop-down list and click `OK`.
-   ![Image of Conditional Formatting - 2-colour scale](../fig/conditional-formatting-2-colour-scale.png)
+   ![Image of Conditional Formatting - 2-colour scale](../fig/conditional-formatting-2-colour-scale.png){: .image-with-shadow }
 4. Now we can scan through the column and different colours will stand out. Do you notice any strange values?
 5. Cells that contain non-numerical values are not coloured making them easier to spot.
    This includes both the cells where the letter "g" was
    included and the empty cells. They show up at either at the top or at the bottom of the data but may not be as easy to
    spot if you have a very large dataset and have to scroll a lot.
-   ![Image of Conditional Formatting - result](../fig/conditional-formatting-result.png)
+   ![Image of Conditional Formatting - result](../fig/conditional-formatting-result.png){: .image-with-shadow width="900px" }
 > {: .solution}
 {: .challenge}
 
