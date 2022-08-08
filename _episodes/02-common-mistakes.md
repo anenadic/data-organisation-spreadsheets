@@ -312,11 +312,8 @@ Take the messy version of the survey data and open it in a spreadsheet program. 
 > Whilst completing this exercise, you might like to contemplate how much
 > time could be have been saved if the researchers had agreed on a data format before the collection took place, and how
 > long it would take to clean real-world research data that could contain many millions of records.
->
-> > ## Keep your raw data - raw
-> > Do not forget to create a new file or a new tab for the cleaned data; never
-> > modify your original (raw) data.
-> {: .callout}
+> 
+> Do not forget to create a new file or a new tab for the cleaned data; never modify your original (raw) data.
 >
 > > ## Solution
 > > When you finish, compare your clean spreadsheet with the structure suggested below or with
