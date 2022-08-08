@@ -1,2 +1,1 @@
-Forked from the Data Carpentry's lesson ["Data Organization in Spreadsheets for Ecologists"](https://github.com/datacarpentry/spreadsheet-ecology-lesson).
- 
+This lesson is based on [Data Carpentry's](https://datacarpentry.org) "Data Organisation In Spreadsheets" lessons from the [ecology](https://datacarpentry.org/lessons/#ecology-workshop) and [social sciences](https://datacarpentry.org/lessons/#social-science-curriculum) curricula. 
