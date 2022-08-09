@@ -35,7 +35,7 @@ choices you make now will limit your ability to work with the data in the future
 
 Here are some cardinal rules when using spreadsheet programs for data organisation:
 
-1. Put each of your variables (i.e. the thing you are measuring, like 'weight' or 'temperature') in its own column. Put each observation of these variables in its own row. This means keep your data in a nice and tidy table structure and do not try to combine multiple variables in one cell.
+1. Put each of your variables (i.e. the things you are measuring or observing, like 'weight' or 'temperature') in its own column. Put a single observation of these variables in its own row. Keep your data in a nice and tidy table structure.
 2. Include metadata about your data with your data (but not in your data).
 3. Leave the raw data raw - do not change it! This means anything you do to your data (even sorting it) - do it on a copy or you will change the original data irreversibly and will not be able to go back.
 4. Keep track of your analyses. 
@@ -49,7 +49,7 @@ like species, plot, weight, sex and date collected.
              
 ### Tidy data principle
 
-Here's an example of poor data collection:
+Do not try to combine multiple variables in one cell. Here's an example of poor data collection:
 
 ![multiple-info example](../fig/multiple-info.png){: .image-with-shadow }
 
@@ -93,13 +93,13 @@ all the files and folders in a project.
 > The above text on metadata was adapted from the online course Research Data [MANTRA](http://datalib.edina.ac.uk/mantra) by EDINA and Data Library, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 {: .testimonial}
 
-### Keep your raw data - raw
+### Keeping your raw data - raw
 Never modify your original (raw) data - create a new file or a new tab with a copy of your data before you start 
 transforming and cleaning your raw data. This includes even sorting your data as sometimes you can (accidentally or intentionally) 
 sort a single column without expanding the sort to other columns and forget about it - if you save your data after this 
 step this will change it irreversibly.
 
-### Keep track of your analysis
+### Keeping track of your analysis
 
 When you are working with data in spreadsheets, the spreadsheet you end up with will often look very different to the one
 you started with. With each change, you are losing information about the history of the data. How many times have you
