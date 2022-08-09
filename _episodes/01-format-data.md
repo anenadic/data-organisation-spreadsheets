@@ -8,9 +8,9 @@ objectives:
 - "Describe best practices for data entry and formatting in spreadsheets."
 - "Apply best practices to arrange variables and observations in a spreadsheet."
 keypoints:
+- "Organise your data according to the tidy data principles."
 - "Never modify your raw data. Always make a copy before making any changes."
 - "Keep track of all of the steps you take to clean your data in a plain text file."
-- "Organise your data according to tidy data principles."
 - "Record metadata in a separate plain text file (such as README.txt) in your project root folder or folder with data."
 ---
 
