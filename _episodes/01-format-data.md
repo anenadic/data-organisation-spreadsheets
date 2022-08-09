@@ -47,7 +47,8 @@ Let's have a look at each of these rules in action.
              
 ### Tidy data principle
 
-Do not try to combine multiple variables in one cell. Let's look at the following data from a survey of small mammals in a desert
+Do not try to combine multiple variables in one cell and do not put multiple observations of the same variable in the same row. 
+Let's look at the following data from a survey of small mammals in a desert
 ecosystem. Different scientists have gone to the field and entered data into a spreadsheet. They kept track of variables
 like species, plot, weight, sex and date when data was collected. Here's an example of poor data organisation:
 
