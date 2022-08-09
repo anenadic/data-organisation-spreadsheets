@@ -127,4 +127,4 @@ taken.
 
 ## Fixing mistakes in data organisation
 
-We will now look at some common mistakes and learn some best practices in data organisation that will help us clean some data.
+We will now look at some common mistakes and learn some best practices in data organisation that will help us keep our data clean and tidy.
