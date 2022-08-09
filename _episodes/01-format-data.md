@@ -43,13 +43,13 @@ Here are some cardinal rules when using spreadsheet programs for data organisati
    ensures that anyone can use the data, and is required by
    most data repositories and publishers. We will cover this later in the lesson.
 
-To see some of these rules in action, let's look at the following data from a survey of small mammals in a desert
-ecosystem. Different scientists have gone to the field and entered data into a spreadsheet. They kept track of variables
-like species, plot, weight, sex and date collected.
+Let's have a look at each of these rules in action.
              
 ### Tidy data principle
 
-Do not try to combine multiple variables in one cell. Here's an example of poor data collection:
+Do not try to combine multiple variables in one cell. Let's look at the following data from a survey of small mammals in a desert
+ecosystem. Different scientists have gone to the field and entered data into a spreadsheet. They kept track of variables
+like species, plot, weight, sex and date when data was collected. Here's an example of poor data organisation:
 
 ![multiple-info example](../fig/multiple-info.png){: .image-with-shadow }
 
@@ -57,7 +57,7 @@ There are problems like the species and sex variables being in the same field. T
 to easily look at all of one species, or look at different weight distributions by sex. If, instead, we put sex and
 species in different columns, it would be much easier to perform such analyses.
 
-The data could be better organised as:
+The same data could be better organised as:
 
 ![single-info example](../fig/single-info.png){: .image-with-shadow }
 
